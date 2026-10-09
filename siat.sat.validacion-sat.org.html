@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validador QR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 21px 12px;
+    background: #f6f5f3;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 13px;
+    color: #3a3a3a;
+  }
+
+  /* ---------- Aviso de demo ---------- */
+  .aviso-demo {
+    margin: -21px -12px 21px;
+    padding: 7px 12px;
+    background: #7a1f2b;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  /* ---------- Encabezado ---------- */
+  .encabezado {
+    margin-bottom: 70px;
+  }
+
+  .encabezado img {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    mix-blend-mode: multiply; /* funde el fondo blanco del JPG con el de la página */
+  }
+
+  /* ---------- Mensaje informativo ---------- */
+  .mensaje {
+    width: 625px;
+    max-width: 100%;
+    padding: 10px 12px;
+    background: linear-gradient(to bottom, #ffffff 0%, #f7f5f5 60%, #ece9ea 100%);
+    border: 1px solid #c9a97e;
+    border-radius: 8px;
+  }
+
+  .mensaje-contenido {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 38px;
+    padding: 8px 11px;
+    line-height: 1.4;
+    background: #c2a47c;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+    font-weight: 600;
+    font-size: 13px;
+    color: #1f1a14;
+  }
+
+  .icono-info {
+    flex: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #a9d4ff 0%, #5aa5f2 55%, #3d86dd 100%);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.55), 0 0 3px rgba(60, 130, 220, 0.6);
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 14px;
+    text-align: center;
+  }
+
+  /* ---------- Panel ---------- */
+  .panel {
+    margin-top: 12px;
+    background: #f2f0ec;
+    border: 1px solid #c9a97e;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.28);
+    overflow: hidden;
+  }
+
+  .panel-titulo {
+    height: 26px;
+    padding: 0 12px;
+    line-height: 25px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #4a4039;
+    background: linear-gradient(to bottom, #f3efe9 0%, #e3d3bf 35%, #c9ab84 75%, #b8956a 100%);
+    border-bottom: 1px solid #b08d62;
+  }
+
+  .panel-cuerpo {
+    padding: 8px 12px 9px;
+  }
+
+  .fila {
+    display: flex;
+    line-height: 21.5px;
+  }
+
+  .fila .etiqueta {
+    width: 116px;
+    margin-right: 11px;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .fila .valor {
+    flex: 1;
+    word-break: break-word;
+  }
+</style>
+</head>
+<body>
+
+
+  <header class="encabezado">
+    <img src="logo.jpg" alt="Hacienda | SAT">
+  </header>
+
+  <div class="mensaje">
+    <div class="mensaje-contenido">
+      <span class="icono-info">i</span>
+      <span>La Constancia de Situación Fiscal que verificó fue emitida por el Servicio de Administración Tributaria</span>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-titulo">Datos de Identificación</div>
+    <div class="panel-cuerpo">
+      <div class="fila">
+        <span class="etiqueta">RFC :</span>
+        <span class="valor">GUCG011208IB5</span>
+      </div>
+      
+<div class="fila">
+    <span class="etiqueta">Cadena<br>Original:</span>
+
+    <div class="valores">
+        <span class="valor">||2026/10/9 11:05:28|GUCG011208IB5|CONSTANCIA DE SITUACIÓN</span>
+        <span class="valor">FISCAL|200001088888800921216|||U2FsdGVkX19VeZ32JTB9Cru1zFzq8mHMLxsav5HYmCtm4Agd+bWyxqa91E9rUsSb</span>
+    </div>
+</div>
+
+    </div>
+  </div>
+
+</body>
+</html>
